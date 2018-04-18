@@ -1,5 +1,6 @@
 def oxford_comma(array)
-  new_array = (array.take(array.length - 1)).join (", ")
-  other_array = array.pop
-puts  new_array + "and" + other_array
+  if array.length == array(-1)
+    array.insert (1, "and").join(" ")
+  else array.join(", ")
+  end
 end
