@@ -1,4 +1,9 @@
 def oxford_comma(array)
-new_array = array.insert(-2, "and")
-new_array.join(", ")
+counter = 0
+if counter < (array.length - 1) 
+  array.join(", ")
+else 
+  array.insert(1, "and").join(", ")
+end 
 end
+end 
